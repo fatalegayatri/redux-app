@@ -20,7 +20,7 @@ export const todoSlice = createSlice({
             console.log(action.payload)
             const item = {
                 id: nanoid(),
-                title: action.payload,
+                title: action.payload.title,
             }
             state.todos.push(item);
 
